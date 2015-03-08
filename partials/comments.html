@@ -5,10 +5,9 @@
 <div class>
 
   <ul>
-    <ul-comment ng-repeat="item in link.comments | orderBy:'rank()':true">
+    <ul-comment ng-repeat="item in link.comments">
       <h4>{{ item.comment }}</h4>
       <h6>by <strong>{{ item.name }}</strong></h6>
-      <a ng-click="LinksFactory.findLinkByID(item.id).upvote()">upvote</a>
     </ul>
   </ul>
 
